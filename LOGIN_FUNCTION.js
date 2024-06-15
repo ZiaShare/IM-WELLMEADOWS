@@ -4,7 +4,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
 
-    // Validate credentials (dummy validation here)
     if (username === 'admin' && password === 'password') {
         localStorage.setItem('isLoggedIn', 'true');
         window.location.href = 'index.html';

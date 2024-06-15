@@ -1,0 +1,100 @@
+<html>
+<head>
+    <link href="HOMEPAGE_STYLE.css" rel="stylesheet" />
+    <script src="DATE_TIME.js"></script>
+    <script src="LOGOUT.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="image/LOGO.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav">
+                <p class="NAME">Wellmeadows Hospital</p>
+            </div>
+            <div class="datetime">
+                <p id="date"></p>
+                <p id="time"></p>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="tooltip">
+            <a href="patient_appointment.html">
+                <img src="icons/patient_appointment.png" alt="Patient Appointment">
+            </a>
+            <span class="tooltiptext">Patient Appointment</span>
+        </div>
+        <div class="tooltip">
+            <a href="patient.html">
+                <img src="icons/patient.png" alt="Patient">
+            </a>
+            <span class="tooltiptext">Patient</span>
+        </div>
+        <div class="tooltip">
+            <a href="staff.html">
+                <img src="icons/staff.png" alt="Staff">
+            </a>
+            <span class="tooltiptext">Staff</span>
+        </div>
+        <div class="tooltip">
+            <a href="ward.html">
+                <img src="icons/ward.png" alt="Ward">
+            </a>
+            <span class="tooltiptext">Ward</span>
+        </div>
+        <div class="tooltip">
+            <a href="requisition.html">
+                <img src="icons/requisition.png" alt="Requisition">
+            </a>
+            <span class="tooltiptext">Requisition</span>
+        </div>
+        <div class="logout">
+            <a id="logoutButton" href="#">
+                <img src="icons/logout.png" alt="Logout">
+            </a>
+        </div>
+    </div>
+
+    <div id="confirmationContainer" class="confirmation">
+        <p><b>Are you sure you want to logout your account?</b></p>
+        <button id="confirmLogout">Yes, Logout</button>
+        <button id="cancelLogout">Cancel</button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="profile">
+                <img src="icons/user-icon.png" alt="User Icon"/>
+            </div>
+            <div class="name-assignment">
+                <h2 class="user-name">Ms. Moira Samuel</h2>
+                <p class="assignment">Charged Nurse</p>
+            </div>
+        </div>
+        <div class="data">Patient Data</div>
+
+        <div class="patient-details">
+            <h3 class="top"> Patient Number: P10034 </h3>
+            <div class="details">
+                <div class="left">
+                    <p>First Name: Anne</p>
+                    <p>Address: 44 North Bridges Cannon mills Edinburgh, EH1 5GH</p>
+                    <p>DOB: 12-Dec-33</p>
+                </div>
+                <div class="right">
+                    <p>Last Name: Phelps</p>
+                    <p>Sex: Female</p>
+                    <p>Tel No.: 0131-332-4111</p>
+                    <p>Marital Status: Single</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
