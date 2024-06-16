@@ -154,55 +154,22 @@ body {
     background-color: #85df85; 
 }
 
-.box {
-    display: flex;
-    align-items: center;
-    margin-left: 150px;
-    margin-top: 150px;
-}
-
-.patient-appointment {
+.WARD {
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    margin-top: 180px;
+    margin-left: 200px;
     background-color: bisque;
-    width: auto; /* Adjust as needed */
+    width: 5%;
     padding: 10px 15px;
     border-radius: 15px;
-    margin-left: 5px;
-    align-items: left;
-}
-
-.new-appointment {
-    display: flex;
-    align-items: center;
-}
-
-.new-appointment {
-    text-decoration: none; 
-}
-
-.new-appointment button {
-    margin: 15px 10px;
-    padding: 10px 15px;
-    margin-left: 590px;
-    font-size: 25px;
-    background-color: bisque;
-    border-radius: 15px;
-    border: 1px solid black;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.new-appointment button:hover {
-    background-color: rgb(213, 164, 105); 
 }
 
 table {
-    width: 80%;
+    width: 70%;
     border-collapse: collapse;
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 200px;
 }
 
 th, td {

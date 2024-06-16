@@ -1,8 +1,9 @@
 <html>
 <head>
-    <link href="HOMEPAGE_STYLE.css" rel="stylesheet" />
+    <link href="PATIENT.css" rel="stylesheet" />
     <script src="DATE_TIME.js"></script>
     <script src="LOGOUT.js"></script>
+    <script src="SEARCH-BAR.js"></script>
 </head>
 
 <body>
@@ -66,35 +67,20 @@
         <button id="cancelLogout">Cancel</button>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="profile">
-                <img src="icons/user-icon.png" alt="User Icon"/>
-            </div>
-            <div class="name-assignment">
-                <h2 class="user-name">Ms. Moira Samuel</h2>
-                <p class="assignment">Charged Nurse</p>
-            </div>
-        </div>
-        <div class="data">Patient Data</div>
+    <row class="PATIENT-SEARCH">
+        <div class="PATIENT"><b> PATIENT</b></div>
 
-        <div class="patient-details">
-            <h3 class="top"> Patient Number: P10034 </h3>
-            <div class="details">
-                <div class="left">
-                    <p>First Name: Anne</p>
-                    <p>Address: 44 North Bridges Cannon mills Edinburgh, EH1 5GH</p>
-                    <p>DOB: 12-Dec-33</p>
-                </div>
-                <div class="right">
-                    <p>Last Name: Phelps</p>
-                    <p>Sex: Female</p>
-                    <p>Tel No.: 0131-332-4111</p>
-                    <p>Marital Status: Single</p>
-                </div>
-            </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="SEARCH">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85a1.007 1.007 0 0 0-.115-.098zm-5.442 1.1a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+                </svg>
+            </button>
         </div>
-    </div>
+    
+        <div id="search-results"></div>
+    </row>
 
 </body>
 </html>

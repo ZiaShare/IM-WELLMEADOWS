@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link href="HOMEPAGE_STYLE.css" rel="stylesheet" />
+    <link href="SUPPLIER.css" rel="stylesheet" />
     <script src="DATE_TIME.js"></script>
     <script src="LOGOUT.js"></script>
 </head>
@@ -66,35 +66,26 @@
         <button id="cancelLogout">Cancel</button>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="profile">
-                <img src="icons/user-icon.png" alt="User Icon"/>
-            </div>
-            <div class="name-assignment">
-                <h2 class="user-name">Ms. Moira Samuel</h2>
-                <p class="assignment">Charged Nurse</p>
-            </div>
-        </div>
-        <div class="data">Patient Data</div>
-
-        <div class="patient-details">
-            <h3 class="top"> Patient Number: P10034 </h3>
-            <div class="details">
-                <div class="left">
-                    <p>First Name: Anne</p>
-                    <p>Address: 44 North Bridges Cannon mills Edinburgh, EH1 5GH</p>
-                    <p>DOB: 12-Dec-33</p>
+    <div class="SUPPLIER-CONTAINER">
+        <div class="SUPPLIER-INFO">
+            <p class="SUPPLIER"><b>Supplier</b></p>
+                <div class="details">
+                    <div class="LEFT">
+                        <label for="NAME">Name:</label>
+                        <input type="text" id="NAME">
+                        <label for="TELEPHONE-NUMBER">Telephone no.:</label>
+                        <input type="text" id="TELEPHONE-NUMBER">
+                        <label for="ADDRESS">Address:</label>
+                        <input type="text" id="ADDRESS">
+                    </div>
+                    <div class="RIGHT">
+                        <label for="SUPPLIER-NUMBER">Supplier No.:</label>
+                        <input type="text" id="SUPPLIER-NUMBER">
+                        <label for="FAX-NUMBER">Fax Number:</label>
+                        <input type="text" id="FAX-NUMBER">
+                    </div>
                 </div>
-                <div class="right">
-                    <p>Last Name: Phelps</p>
-                    <p>Sex: Female</p>
-                    <p>Tel No.: 0131-332-4111</p>
-                    <p>Marital Status: Single</p>
-                </div>
-            </div>
         </div>
     </div>
-
 </body>
 </html>

@@ -154,65 +154,50 @@ body {
     background-color: #85df85; 
 }
 
-.box {
+.SUPPLIER-CONTAINER {
+    border-radius: 15px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 150px;
     margin-top: 150px;
+    margin-left: 250px;
+    width: 60%;
+    padding: 20px;
 }
 
-.patient-appointment {
-    font-family: Arial, Helvetica, sans-serif;
+.SUPPLIER {
     font-size: 25px;
-    background-color: bisque;
-    width: auto; /* Adjust as needed */
-    padding: 10px 15px;
-    border-radius: 15px;
-    margin-left: 5px;
-    align-items: left;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.new-appointment {
+.SUPPLIER-CONTAINER .SUPPLIER-INFO {
+    background-color: #F5F5DC;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.SUPPLIER-CONTAINER .SUPPLIER-INFO label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.SUPPLIER-CONTAINER .SUPPLIER-INFO input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.SUPPLIER-CONTAINER .details {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.new-appointment {
-    text-decoration: none; 
-}
-
-.new-appointment button {
-    margin: 15px 10px;
-    padding: 10px 15px;
-    margin-left: 590px;
-    font-size: 25px;
-    background-color: bisque;
-    border-radius: 15px;
-    border: 1px solid black;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.new-appointment button:hover {
-    background-color: rgb(213, 164, 105); 
-}
-
-table {
-    width: 80%;
-    border-collapse: collapse;
-    margin-top: 50px;
-    margin-left: 150px;
-}
-
-th, td {
-    padding: 15px 9px;
-    text-align: center;
-    color: white;
-    align-self: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-th {
-    background-color: rgb(63, 139, 66);
+.SUPPLIER-CONTAINER .details .LEFT, .SUPPLIER-CONTAINER .details .RIGHT {
+    flex: 1;
+    margin: 0 10px;
 }
