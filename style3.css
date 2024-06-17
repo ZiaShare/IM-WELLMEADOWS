@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -88,3 +89,95 @@ body {
 .button-style:hover {
     background-color: lightgrey;
 }
+=======
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background: url("HOSPITAL.avif") no-repeat center fixed;
+    background-size: cover;
+} 
+
+.login-container {
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin: 0;  
+}
+
+.subtitle {
+    text-align: center;
+    margin: 0;  
+}
+
+.input-group {
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+.input-username label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.input-username input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.input-password label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.input-password input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.button-style {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #4CAF50;
+    transition: background-color 0.3s;
+}
+
+.button-style:hover {
+    background-color: lightgrey;
+}
+>>>>>>> origin/main
