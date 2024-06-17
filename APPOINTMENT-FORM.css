@@ -11,11 +11,13 @@ body {
     top: 0;
     left: 0;
 }
+
 .logo img {
     max-height: 80px;
     width: auto;
     margin-right: 0px;
 }
+
 .nav {
     font-family: 'Dishcek', sans-serif;
     font-size: 25px;
@@ -217,6 +219,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+
 .personal .details-grid .left, .personal .details-grid .right {
     display: flex;
     flex-direction: column;
@@ -240,11 +243,13 @@ body {
     text-align: center;
     margin-bottom: 15px;
 }
+
 .section .appointment label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
+
 .section .appointment input {
     width: 100%;
     padding: 8px;
@@ -280,6 +285,7 @@ body {
     margin-bottom: 5px;
     font-weight: bold;
 }
+
 .section .referral input {
     width: 100%;
     padding: 8px;

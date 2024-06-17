@@ -11,11 +11,13 @@ body {
     top: 0;
     left: 0;
 }
+
 .logo img {
     max-height: 80px;
     width: auto;
     margin-right: 0px;
 }
+
 .nav {
     font-family: 'Dishcek', sans-serif;
     font-size: 25px;
@@ -179,6 +181,7 @@ body {
 
 .new-appointment {
     text-decoration: none; 
+    
 }
 
 .new-appointment button {

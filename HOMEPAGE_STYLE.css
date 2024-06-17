@@ -11,11 +11,13 @@ body {
     top: 0;
     left: 0;
 }
+
 .logo img {
     max-height: 80px;
     width: auto;
     margin-right: 0px;
 }
+
 .nav {
     font-family: 'Dishcek', sans-serif;
     font-size: 25px;
@@ -154,7 +156,6 @@ body {
     background-color: #85df85; 
 }
 
-
 .container {
     width: 50%;
     height: 60%;
@@ -193,6 +194,7 @@ body {
 
 .user-name, .assignment {
     margin: 0;
+
 }
 
 .user-name {
@@ -226,6 +228,7 @@ body {
 
 .details {
     display: flex;
+    
 }
 
 .left {
