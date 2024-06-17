@@ -1,0 +1,115 @@
+<html>
+<head>
+    <link href="NEW-REQUISITION.css" rel="stylesheet" />
+    <script src="DATE_TIME.js"></script>
+    <script src="LOGOUT.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="HOMEPAGE.html">
+                    <img src="image/LOGO.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav">
+                <p class="NAME">Wellmeadows Hospital</p>
+            </div>
+            <div class="datetime">
+                <p id="date"></p>
+                <p id="time"></p>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="tooltip">
+            <a href="PATIENT-APPOINTMENT.html">
+                <img src="icons/patient_appointment.png" alt="Patient Appointment">
+            </a>
+            <span class="tooltiptext">Patient Appointment</span>
+        </div>
+        <div class="tooltip">
+            <a href="PATIENT.html">
+                <img src="icons/patient.png" alt="Patient">
+            </a>
+            <span class="tooltiptext">Patient</span>
+        </div>
+        <div class="tooltip">
+            <a href="STAFF.html">
+                <img src="icons/staff.png" alt="Staff">
+            </a>
+            <span class="tooltiptext">Staff</span>
+        </div>
+        <div class="tooltip">
+            <a href="WARD.html">
+                <img src="icons/ward.png" alt="Ward">
+            </a>
+            <span class="tooltiptext">Ward</span>
+        </div>
+        <div class="tooltip">
+            <a href="REQUISITION.html">
+                <img src="icons/requisition.png" alt="Requisition">
+            </a>
+            <span class="tooltiptext">Requisition</span>
+        </div>
+        <div class="tooltip">
+            <a href="SUPPLIER.html">
+                <img src="icons/supplier.png" alt="Requisition">
+            </a>
+            <span class="tooltiptext">Supplier</span>
+        </div>
+        <div class="logout">
+            <a id="logoutButton" href="#">
+                <img src="icons/logout.png" alt="Logout">
+            </a>
+        </div>
+    </div>
+
+    <div id="confirmationContainer" class="confirmation">
+        <p><b>Are you sure you want to logout your account?</b></p>
+        <button id="confirmLogout">Yes, Logout</button>
+        <button id="cancelLogout">Cancel</button>
+    </div>
+
+    <div class="ADD-REQUISITION"> Add Requisition Form </div>
+
+    <div class="container">
+        <div class="ward-requisition">
+            <h2>Ward Requisition</h2>
+            <div class="INFO-REQUISITION">
+                <div class="details-grid">
+                    <div class="left">
+                        <label for="requisition-number">Requisition Number:</label>
+                        <input type="text" id="requisition-number">
+                        <label for="charge-nurse">Charge Nurse ID:</label>
+                        <input type="text" id="charge-nurse">
+                        <label for="staff-number">Staff Number:</label>
+                        <input type="text" id="staff-number">
+                    </div>
+                    <div class="right">
+                        <label for="ward-number">Ward Number:</label>
+                        <input type="text" id="ward-number">
+                        <label for="date-ordered">Date Ordered:</label>
+                        <input type="text" id="date-ordered" placeholder="DD/MM/YY">
+                        <label for="signed-date">Signed Date:</label>
+                        <input type="text" id="signed-date" placeholder="DD/MM/YY">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="supply">
+            <h2>Requisition Supply</h2>
+            <label for="supplier-number">Supplier Number:</label>
+            <input type="text" id="supplier-number">
+            <label for="quantity-required">Quantity Required:</label>
+            <input type="text" id="quantity-required">
+        </div>
+        <div class="buttons">
+            <button>Add Requisition</button>
+        </div>
+    </div>
+    
+
+</body>
+</html>

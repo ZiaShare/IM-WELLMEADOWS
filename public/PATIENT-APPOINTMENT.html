@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellmeadows Hospital</title>
+    <link rel="stylesheet" href="PATIENT-APPOINTMENT.css">
+    <script src="DATE_TIME.js" defer></script>
+    <script src="LOGOUT.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="image/LOGO.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav">
+                <p class="NAME">Wellmeadows Hospital</p>
+            </div>
+            <div class="datetime">
+                <p id="date"></p>
+                <p id="time"></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="tooltip">
+            <a href="PATIENT-APPOINTMENT.html">
+                <img src="icons/patient_appointment.png" alt="Patient Appointment">
+            </a>
+            <span class="tooltiptext">Patient Appointment</span>
+        </div>
+        <div class="tooltip">
+            <a href="patient.html">
+                <img src="icons/patient.png" alt="Patient">
+            </a>
+            <span class="tooltiptext">Patient</span>
+        </div>
+        <div class="tooltip">
+            <a href="staff.html">
+                <img src="icons/staff.png" alt="Staff">
+            </a>
+            <span class="tooltiptext">Staff</span>
+        </div>
+        <div class="tooltip">
+            <a href="ward.html">
+                <img src="icons/ward.png" alt="Ward">
+            </a>
+            <span class="tooltiptext">Ward</span>
+        </div>
+        <div class="tooltip">
+            <a href="requisition.html">
+                <img src="icons/requisition.png" alt="Requisition">
+            </a>
+            <span class="tooltiptext">Requisition</span>
+        </div>
+        <div class="logout">
+            <a id="logoutButton" href="#">
+                <img src="icons/logout.png" alt="Logout">
+            </a>
+        </div>
+    </div>
+
+    <div id="confirmationContainer" class="confirmation">
+        <p><b>Are you sure you want to logout your account?</b></p>
+        <button id="confirmLogout">Yes, Logout</button>
+        <button id="cancelLogout">Cancel</button>
+    </div>
+
+    <div class="box">
+        <div class="patient-appointment">Patient Appointments</div>
+        <a href="APPOINTMENT-FORM.html" class="new-appointment">
+            <button class="new-appointment">+ Add New Appointment</button>
+        </a>
+    </div>
+
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>LAST NAME</th>
+                <th>FIRST NAME</th>
+                <th>DATE</th>
+                <th>STATUS</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+
+    <script>
+ document.addEventListener('DOMContentLoaded', function() {
+    fetch('/appointments')
+        .then(response => response.json())
+        .then(data => {
+            const tbody = document.querySelector('#data-table tbody');
+            data.forEach((appointment, index) => {
+                const row = document.createElement('tr');
+
+                const lastNameCell = createTableCell(appointment.last_name, index);
+                row.appendChild(lastNameCell);
+
+                const firstNameCell = createTableCell(appointment.first_name, index);
+                row.appendChild(firstNameCell);
+
+                const dateCell = createTableCell(formatDate(appointment.date_time), index);
+                row.appendChild(dateCell);
+
+                const statusCell = createTableCell(appointment.status, index); // Display status
+                row.appendChild(statusCell);
+
+                tbody.appendChild(row);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching appointments:', error);
+        });
+
+    function createTableCell(text, index) {
+        const cell = document.createElement('td');
+        cell.textContent = text;
+        cell.style.padding = '15px 9px';
+        cell.style.textAlign = 'center';
+        cell.style.color = 'white';
+        cell.style.fontFamily = 'Arial, Helvetica, sans-serif';
+        cell.style.fontSize = '20px';
+
+        if (index % 2 === 0) {
+            cell.style.backgroundColor = 'rgba(91, 166, 82, 0.5)';
+        } else {
+            cell.style.backgroundColor = 'rgb(63, 139, 66)';
+        }
+
+        return cell;
+    }
+
+    function formatDate(dateTimeString) {
+        const date = new Date(dateTimeString);
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = date.toLocaleString('default', { month: 'short' }).toUpperCase();
+        const year = String(date.getFullYear()).slice(-2);
+        return `${day}-${month}-${year}`;
+    }
+});
+
+    </script>
+</body>
+</html>

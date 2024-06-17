@@ -1,0 +1,100 @@
+<html>
+<head>
+    <link href="SUPPLIER.css" rel="stylesheet" />
+    <script src="DATE_TIME.js"></script>
+    <script src="LOGOUT.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="HOMEPAGE.html">
+                    <img src="image/LOGO.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav">
+                <p class="NAME">Wellmeadows Hospital</p>
+            </div>
+            <div class="datetime">
+                <p id="date"></p>
+                <p id="time"></p>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="tooltip">
+            <a href="PATIENT-APPOINTMENT.html">
+                <img src="icons/patient_appointment.png" alt="Patient Appointment">
+            </a>
+            <span class="tooltiptext">Patient Appointment</span>
+        </div>
+        <div class="tooltip">
+            <a href="PATIENT.html">
+                <img src="icons/patient.png" alt="Patient">
+            </a>
+            <span class="tooltiptext">Patient</span>
+        </div>
+        <div class="tooltip">
+            <a href="STAFF.html">
+                <img src="icons/staff.png" alt="Staff">
+            </a>
+            <span class="tooltiptext">Staff</span>
+        </div>
+        <div class="tooltip">
+            <a href="WARD.html">
+                <img src="icons/ward.png" alt="Ward">
+            </a>
+            <span class="tooltiptext">Ward</span>
+        </div>
+        <div class="tooltip">
+            <a href="REQUISITION.html">
+                <img src="icons/requisition.png" alt="Requisition">
+            </a>
+            <span class="tooltiptext">Requisition</span>
+        </div>
+        <div class="tooltip">
+            <a href="SUPPLIER.html">
+                <img src="icons/supplier.png" alt="Requisition">
+            </a>
+            <span class="tooltiptext">Supplier</span>
+        </div>
+        <div class="logout">
+            <a id="logoutButton" href="#">
+                <img src="icons/logout.png" alt="Logout">
+            </a>
+        </div>
+    </div>
+
+    <div id="confirmationContainer" class="confirmation">
+        <p><b>Are you sure you want to logout your account?</b></p>
+        <button id="confirmLogout">Yes, Logout</button>
+        <button id="cancelLogout">Cancel</button>
+    </div>
+
+    <div class="SUPPLIER-CONTAINER">
+        <div class="SUPPLIER-INFO">
+            <h2 class="SUPPLIER">Supplier</h2>
+                <div class="details">
+                    <div class="LEFT">
+                        <p>Name: John Ramos</p>
+                        <p>Telephone no.: (123) 0111999</p>
+                        <p>Address: ABC Medical Supplies 123 Health St., MedCity, MedState</p>
+                    </div>
+                    <div class="RIGHT">
+                        <p>Supplier No.: SUP001</p>
+                        <p>Fax Number: (123) 09-080001</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <a href="SUPPLIES-LIST.html" class="supplies-list">
+            <button class="supplies-list">SUPPLIES LIST<i class="fas fa-arrow-right"></i></button>
+        </a>
+    </div>
+
+</body>
+</html>

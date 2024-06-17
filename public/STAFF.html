@@ -1,0 +1,91 @@
+<html>
+<head>
+    <link href="STAFF.css" rel="stylesheet" />
+    <script src="DATE_TIME.js"></script>
+    <script src="LOGOUT.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="HOMEPAGE.html">
+                    <img src="image/LOGO.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav">
+                <p class="NAME">Wellmeadows Hospital</p>
+            </div>
+            <div class="datetime">
+                <p id="date"></p>
+                <p id="time"></p>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="tooltip">
+            <a href="PATIENT-APPOINTMENT.html">
+                <img src="icons/patient_appointment.png" alt="Patient Appointment">
+            </a>
+            <span class="tooltiptext">Patient Appointment</span>
+        </div>
+        <div class="tooltip">
+            <a href="PATIENT.html">
+                <img src="icons/patient.png" alt="Patient">
+            </a>
+            <span class="tooltiptext">Patient</span>
+        </div>
+        <div class="tooltip">
+            <a href="STAFF.html">
+                <img src="icons/staff.png" alt="Staff">
+            </a>
+            <span class="tooltiptext">Staff</span>
+        </div>
+        <div class="tooltip">
+            <a href="WARD.html">
+                <img src="icons/ward.png" alt="Ward">
+            </a>
+            <span class="tooltiptext">Ward</span>
+        </div>
+        <div class="tooltip">
+            <a href="REQUISITION.html">
+                <img src="icons/requisition.png" alt="Requisition">
+            </a>
+            <span class="tooltiptext">Requisition</span>
+        </div>
+        <div class="tooltip">
+            <a href="SUPPLIER.html">
+                <img src="icons/supplier.png" alt="Requisition">
+            </a>
+            <span class="tooltiptext">Supplier</span>
+        </div>
+        <div class="logout">
+            <a id="logoutButton" href="#">
+                <img src="icons/logout.png" alt="Logout">
+            </a>
+        </div>
+    </div>
+
+    <div id="confirmationContainer" class="confirmation">
+        <p><b>Are you sure you want to logout your account?</b></p>
+        <button id="confirmLogout">Yes, Logout</button>
+        <button id="cancelLogout">Cancel</button>
+    </div>
+
+    <div class="STAFF"><b>STAFF</b></div>
+
+    <table id="staff-table">
+        <thead>
+            <tr>
+                <th>STAFF NUMBER</th>
+                <th>LAST NAME</th>
+                <th>FIRST NAME</th>
+                <th>POSITION</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+</body>
+</html>

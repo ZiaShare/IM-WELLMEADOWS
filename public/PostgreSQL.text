@@ -1,0 +1,58 @@
+
+CREATE TABLE patients (
+    patient_number VARCHAR(20) PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    telephone VARCHAR(20) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    sex VARCHAR(10) NOT NULL,
+    marital_status VARCHAR(20) NOT NULL,
+    date_registered DATE NOT NULL
+);
+
+CREATE TABLE appointments (
+    appointment_number VARCHAR(20) PRIMARY KEY,
+    patient_number VARCHAR(20) REFERENCES patients(patient_number),
+    consultant_name VARCHAR(100) NOT NULL,
+    id VARCHAR(20) NOT NULL,
+    exam_room VARCHAR(20) NOT NULL,
+    date_time TIMESTAMP NOT NULL
+);
+
+
+
+CREATE TABLE local_doctors (
+    name VARCHAR(100) NOT NULL,
+    clinic_number VARCHAR(20) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    telephone VARCHAR(20) NOT NULL
+);
+
+SELECT * FROM patients; 
+SELECT * FROM local_doctors;
+SELECT * FROM appointments;
+
+DROP TABLE patients;
+DROP TABLE local_doctors;
+DROP TABLE appointments;
+
+DELETE FROM patients;
+DELETE FROM local_doctors;
+DELETE FROM appointments;
+
+CREATE TABLE admins (
+	id SERIAL PRIMARY KEY,
+	admin VARCHAR(50) NOT NULL,
+	password VARCHAR(100) NOT NULL
+);
+
+
+INSERT INTO admins (admin, password) VALUES ('moirasamuel', 'samuel123');
+
+SELECT * FROM admins;
+DELETE FROM admins;
+DROP TABLE admins;
+
+
+

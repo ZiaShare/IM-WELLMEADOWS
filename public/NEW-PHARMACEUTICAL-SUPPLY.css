@@ -1,0 +1,232 @@
+body {
+    background-color: rgb(210, 254, 200);
+}
+
+.header-container {
+    display: flex;
+    background-color: white;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo img {
+    max-height: 80px;
+    width: auto;
+    margin-right: 0px;
+}
+.nav {
+    font-family: 'Dishcek', sans-serif;
+    font-size: 25px;
+}
+
+.datetime {
+    margin-left: auto; 
+    margin-right: 20px; 
+    text-align: right; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 60px;
+    position: fixed;
+    top: 85px;
+    left: 0;
+    background-color: white;
+    padding-top: 20px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.5);
+}
+
+.sidebar a {
+    display: block;
+    text-align: center;
+    padding: 25px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar a img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.sidebar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar a:hover::after {
+    width: 50%;
+}
+
+.tooltip {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color:  rgba(91, 166, 82, 0.5);
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding: 15px;
+    position: absolute;
+    left: 60px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.logout {
+    margin-top: 105px;
+    text-align: center;
+}
+
+.logout a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+.logout a img {
+    width: 40px;
+    height: auto;
+}
+
+.confirmation {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255,255,255, 0.9);
+    padding-top: 520px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    z-index: 1000;
+}
+
+.confirmation p {
+    margin-bottom: 10px;
+}
+
+.confirmation button {
+    margin: 15px 10px;
+    padding: 8px 16px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #51bb39; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.confirmation button:hover {
+    background-color: #85df85; 
+}
+
+.ADD-PHARMACEUTICAL {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 160px;
+    margin-bottom: 20px;
+    margin-left: 580px;
+    text-align: center;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 25%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px; 
+}
+
+.container .pharmaceutical-supplies {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .pharmaceutical-supplies label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.container .pharmaceutical-supplies input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pharmaceutical-supplies .details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.pharmaceutical-supplies .details-grid .left,
+.pharmaceutical-supplies .details-grid .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: bisque;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: rgb(213, 164, 105);
+}

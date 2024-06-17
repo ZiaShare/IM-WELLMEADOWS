@@ -1,0 +1,124 @@
+<html>
+<head>
+    <link href="SUPPLIES-LIST.css" rel="stylesheet" />
+    <script src="DATE_TIME.js"></script>
+    <script src="LOGOUT.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="image/LOGO.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav">
+                <p class="NAME">Wellmeadows Hospital</p>
+            </div>
+            <div class="datetime">
+                <p id="date"></p>
+                <p id="time"></p>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="tooltip">
+            <a href="PATIENT-APPOINTMENT.html">
+                <img src="icons/patient_appointment.png" alt="Patient Appointment">
+            </a>
+            <span class="tooltiptext">Patient Appointment</span>
+        </div>
+        <div class="tooltip">
+            <a href="PATIENT.html">
+                <img src="icons/patient.png" alt="Patient">
+            </a>
+            <span class="tooltiptext">Patient</span>
+        </div>
+        <div class="tooltip">
+            <a href="STAFF.html">
+                <img src="icons/staff.png" alt="Staff">
+            </a>
+            <span class="tooltiptext">Staff</span>
+        </div>
+        <div class="tooltip">
+            <a href="WARD.html">
+                <img src="icons/ward.png" alt="Ward">
+            </a>
+            <span class="tooltiptext">Ward</span>
+        </div>
+        <div class="tooltip">
+            <a href="requisition.html">
+                <img src="icons/requisition.png" alt="Requisition">
+            </a>
+            <span class="tooltiptext">Requisition</span>
+        </div>
+        <div class="tooltip">
+            <a href="SUPPLIER.html">
+                <img src="icons/supplier.png" alt="Requisition">
+            </a>
+            <span class="tooltiptext">Supplier</span>
+        </div>
+        <div class="logout">
+            <a id="logoutButton" href="#">
+                <img src="icons/logout.png" alt="Logout">
+            </a>
+        </div>
+    </div>
+
+    <div id="confirmationContainer" class="confirmation">
+        <p><b>Are you sure you want to logout your account?</b></p>
+        <button id="confirmLogout">Yes, Logout</button>
+        <button id="cancelLogout">Cancel</button>
+    </div>
+
+    <div class="PHARMACEUTICAL-LIST">
+        <div class="pharmaceutical"><b>PHARMACEUTICAL SUPPLIES LIST</b></div>
+            <a href="NEW-PHARMACEUTICAL-SUPPLY.html" class="new-pharmaceutical">
+                <button class="new-pharmaceutical">+ Add New Supply</button>
+            </a>
+    </div>
+
+    <table id="data-pharmaceutical">
+        <thead>
+            <tr>
+                <th>Pharmaceutal ID</th>
+                <th>Drug Number</th>
+                <th>Drug Name</th>
+                <th>Drug Description</th>
+                <th>Dosage</th>
+                <th>Method of Administration</th>
+                <th>Quantity in Stock</th>
+                <th>Reorder Level</th>
+                <th>Cost per Unit</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div class="SURGICAL-LIST">
+        <div class="surgical"><b>SURGICAL AND NON-SURGICAL SUPPLIES LIST</b></div>
+            <a href="NEW-SURGICAL-SUPPLY.html" class="new-surgical">
+                <button class="new-surgical">+ Add New Supply</button>
+            </a>
+    </div>
+
+    <table id="data-surgical">
+        <thead>
+            <tr>
+                <th>Supply ID</th>
+                <th>Item Number</th>
+                <th>Item Name</th>
+                <th>Item Description</th>
+                <th>Quantity in Stock</th>
+                <th>Reorder Level</th>
+                <th>Cost per Unit</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+</body>
+</html>
