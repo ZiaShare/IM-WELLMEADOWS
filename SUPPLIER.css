@@ -11,19 +11,13 @@ body {
     top: 0;
     left: 0;
 }
-<<<<<<< HEAD:public/HOMEPAGE_STYLE.css
-=======
 
->>>>>>> 6f3832743fb74fb9cb98e68ab882473d4cf4d84e:HOMEPAGE_STYLE.css
 .logo img {
     max-height: 80px;
     width: auto;
     margin-right: 0px;
 }
-<<<<<<< HEAD:public/HOMEPAGE_STYLE.css
-=======
 
->>>>>>> 6f3832743fb74fb9cb98e68ab882473d4cf4d84e:HOMEPAGE_STYLE.css
 .nav {
     font-family: 'Dishcek', sans-serif;
     font-size: 25px;
@@ -162,99 +156,70 @@ body {
     background-color: #85df85; 
 }
 
-<<<<<<< HEAD:public/HOMEPAGE_STYLE.css
+.SUPPLIER-CONTAINER {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-=======
->>>>>>> 6f3832743fb74fb9cb98e68ab882473d4cf4d84e:HOMEPAGE_STYLE.css
-.container {
+.SUPPLIER {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+.SUPPLIER-CONTAINER .SUPPLIER-INFO {
     width: 50%;
     height: 60%;
     background-color: white;
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-    justify-content: flex-start; 
-    margin: 170px 20px 80px 390px;
+    border-radius: 15px;
+    margin: 220px 20px 80px 100px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-.row {
+.SUPPLIER-CONTAINER .details {
     display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
-    width: 100%;
+    justify-content: space-between;
 }
 
-.profile {
-    margin-right: 20px; 
-}
-
-.profile img {
-    width: 100px; 
-    height: auto;
-    border-radius: 50%; 
-}
-
-.name-assignment {
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.user-name, .assignment {
-    margin: 0;
-<<<<<<< HEAD:public/HOMEPAGE_STYLE.css
-=======
-
->>>>>>> 6f3832743fb74fb9cb98e68ab882473d4cf4d84e:HOMEPAGE_STYLE.css
-}
-
-.user-name {
-    margin-bottom: 5px; 
-}
-
-.data {
+.SUPPLIER-CONTAINER .details .LEFT, .SUPPLIER-CONTAINER .details .RIGHT {
+    flex: 1;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    background-color: bisque;
-    border-radius: 25px;
-    border: 1px solid black;
-    padding: 10px 15px;
-    margin-top: 10px;
-    align-self: center;
+    margin-left: 50px;
 }
 
-.patient-details{
-    background-color: bisque;
-    border: 1px solid black;
-    border-radius: 25px;
-    margin-top: 20px;
-    align-self: center;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 70%;
-}
-
-.top {
-    text-align: center;
-}
-
-.details {
+.supplies-list {
     display: flex;
-<<<<<<< HEAD:public/HOMEPAGE_STYLE.css
-=======
-    
->>>>>>> 6f3832743fb74fb9cb98e68ab882473d4cf4d84e:HOMEPAGE_STYLE.css
+    align-items: center;
 }
 
-.left {
-    text-align: left;
-    width: 50%;
-    margin-left: 50px;
+.supplies-list {
+    text-decoration: none; 
 }
 
-.right {
-    text-align: left;
-    width: 50%;
-    margin-left: 50px;
+.supplies-list button {
+    padding: 10px 15px;
+    margin-left: 650px;
+    font-size: 25px;
+    background-color: bisque; 
+    border-radius: 30px; 
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    align-items: center;
+}
+
+.supplies-list button:hover {
+    background-color: #D5A469; 
+}
+
+.supplies-list i {
+    margin-left: 10px; 
 }

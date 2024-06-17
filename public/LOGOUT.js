@@ -14,7 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Logout successful');
         confirmationContainer.style.display = 'none';
         // Implement actual logout logic here (redirect, clear session, etc.)
+<<<<<<< HEAD:public/LOGOUT.js
         window.location.href = 'LOGIN_FINAL.html';
+=======
+        window.location.href = 'LOGIN FINAL.html';
+>>>>>>> 6f3832743fb74fb9cb98e68ab882473d4cf4d84e:LOGOUT.js
     });
 
     cancelLogout.addEventListener('click', function() {

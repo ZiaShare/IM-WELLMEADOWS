@@ -11,19 +11,13 @@ body {
     top: 0;
     left: 0;
 }
-<<<<<<< HEAD:public/HOMEPAGE_STYLE.css
-=======
 
->>>>>>> 6f3832743fb74fb9cb98e68ab882473d4cf4d84e:HOMEPAGE_STYLE.css
 .logo img {
     max-height: 80px;
     width: auto;
     margin-right: 0px;
 }
-<<<<<<< HEAD:public/HOMEPAGE_STYLE.css
-=======
 
->>>>>>> 6f3832743fb74fb9cb98e68ab882473d4cf4d84e:HOMEPAGE_STYLE.css
 .nav {
     font-family: 'Dishcek', sans-serif;
     font-size: 25px;
@@ -162,99 +156,127 @@ body {
     background-color: #85df85; 
 }
 
-<<<<<<< HEAD:public/HOMEPAGE_STYLE.css
-
-=======
->>>>>>> 6f3832743fb74fb9cb98e68ab882473d4cf4d84e:HOMEPAGE_STYLE.css
-.container {
-    width: 50%;
-    height: 60%;
-    background-color: white;
+.PHARMACEUTICAL-LIST {
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-    justify-content: flex-start; 
-    margin: 170px 20px 80px 390px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 150px;
 }
 
-.row {
-    display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
-    width: 100%;
-}
-
-.profile {
-    margin-right: 20px; 
-}
-
-.profile img {
-    width: 100px; 
-    height: auto;
-    border-radius: 50%; 
-}
-
-.name-assignment {
-    display: flex;
-    flex-direction: column;
+.pharmaceutical {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.user-name, .assignment {
-    margin: 0;
-<<<<<<< HEAD:public/HOMEPAGE_STYLE.css
-=======
-
->>>>>>> 6f3832743fb74fb9cb98e68ab882473d4cf4d84e:HOMEPAGE_STYLE.css
-}
-
-.user-name {
-    margin-bottom: 5px; 
-}
-
-.data {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 25px;
     background-color: bisque;
-    border-radius: 25px;
-    border: 1px solid black;
+    width: auto; 
     padding: 10px 15px;
-    margin-top: 10px;
-    align-self: center;
+    border-radius: 15px;
+    margin-left: 5px;
+    align-items: left;
 }
 
-.patient-details{
+.new-pharmaceutical {
+    display: flex;
+    align-items: center;
+}
+
+.new-pharmaceutical {
+    text-decoration: none; 
+}
+
+.new-pharmaceutical button {
+    padding: 10px 15px;
+    margin-left: 520px;
+    font-size: 25px;
     background-color: bisque;
+    border-radius: 15px;
     border: 1px solid black;
-    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.new-pharmaceutical button:hover {
+    background-color: rgb(213, 164, 105); 
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
     margin-top: 20px;
+    margin-left: 150px;
+}
+
+th, td {
+    padding: 15px 9px;
+    text-align: center;
+    color: white;
     align-self: center;
     font-family: Arial, Helvetica, sans-serif;
-    width: 70%;
 }
 
-.top {
-    text-align: center;
+th {
+    background-color: rgb(63, 139, 66);
 }
 
-.details {
+.SURGICAL-LIST {
     display: flex;
-<<<<<<< HEAD:public/HOMEPAGE_STYLE.css
-=======
-    
->>>>>>> 6f3832743fb74fb9cb98e68ab882473d4cf4d84e:HOMEPAGE_STYLE.css
+    align-items: center;
+    margin-left: 150px;
 }
 
-.left {
-    text-align: left;
-    width: 50%;
-    margin-left: 50px;
+.surgical {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: bisque;
+    width: auto; 
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-top: 150px;
+    align-items: left;
 }
 
-.right {
-    text-align: left;
-    width: 50%;
-    margin-left: 50px;
+.new-surgical {
+    display: flex;
+    align-items: center;
+}
+
+.new-surgical {
+    text-decoration: none; 
+}
+
+.new-surgical button {
+    margin-top: 150px;
+    padding: 10px 15px;
+    margin-left: 360px;
+    font-size: 25px;
+    background-color: bisque;
+    border-radius: 15px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.new-surgical button:hover {
+    background-color: rgb(213, 164, 105); 
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+th, td {
+    padding: 15px 9px;
+    text-align: center;
+    color: white;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+    background-color: rgb(63, 139, 66);
 }
