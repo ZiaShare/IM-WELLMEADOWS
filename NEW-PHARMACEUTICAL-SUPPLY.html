@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link href="PATIENT-APPOINTMENT.css" rel="stylesheet" />
+    <link href="NEW-PHARMACEUTICAL-SUPPLY.css" rel="stylesheet" />
     <script src="DATE_TIME.js"></script>
     <script src="LOGOUT.js"></script>
 </head>
@@ -48,7 +48,7 @@
             <span class="tooltiptext">Ward</span>
         </div>
         <div class="tooltip">
-            <a href="requisition.html">
+            <a href="REQUISITION.html">
                 <img src="icons/requisition.png" alt="Requisition">
             </a>
             <span class="tooltiptext">Requisition</span>
@@ -72,25 +72,35 @@
         <button id="cancelLogout">Cancel</button>
     </div>
 
-    <div class="box">
-        <div class="patient-appointment"><b>PATIENT APPOINTMENT</b></div>
-            <a href="APPOINTMENT-FORM.html" class="new-appointment">
-                <button class="new-appointment">+ Add New Appointment</button>
-            </a>
+    <div class="ADD-PHARMACEUTICAL">Pharmaceutical Supply Form</div>
+
+    <div class="container">
+        <div class="pharmaceutical-supplies">
+            <div class="details-grid">
+                <div class="left">
+                    <label for="pharmaceutical-ID">Pharmaceutical ID:</label>
+                    <input type="text" id="pharmaceutical-ID">
+                    <label for="drug-number">Drug Number:</label>
+                    <input type="text" id="drug-number">
+                    <label for="drug-name">Drug Name:</label>
+                    <input type="text" id="drug-name">
+                    <label for="drug-description">Drug Description:</label>
+                    <input type="text" id="drug-description">
+                </div>
+                <div class="right">
+                    <label for="dosage">Dosage:</label>
+                    <input type="text" id="dosage">
+                    <label for="method">Method of Administration:</label>
+                    <input type="text" id="method">
+                    <label for="cost">Cost per Unit:</label>
+                    <input type="text" id="cost">
+                </div>
+            </div>
+        </div>
     </div>
-
-    <table id="data-table">
-        <thead>
-            <tr>
-                <th>LAST NAME</th>
-                <th>FIRST NAME</th>
-                <th>DATE</th>
-                <th>STATUS</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
-
+    <div class="buttons">
+        <button>Add Supply</button>
+    </div>
+    
 </body>
 </html>

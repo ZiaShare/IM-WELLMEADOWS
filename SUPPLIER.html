@@ -3,6 +3,7 @@
     <link href="SUPPLIER.css" rel="stylesheet" />
     <script src="DATE_TIME.js"></script>
     <script src="LOGOUT.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -53,6 +54,12 @@
             </a>
             <span class="tooltiptext">Requisition</span>
         </div>
+        <div class="tooltip">
+            <a href="SUPPLIER.html">
+                <img src="icons/supplier.png" alt="Requisition">
+            </a>
+            <span class="tooltiptext">Supplier</span>
+        </div>
         <div class="logout">
             <a id="logoutButton" href="#">
                 <img src="icons/logout.png" alt="Logout">
@@ -68,24 +75,26 @@
 
     <div class="SUPPLIER-CONTAINER">
         <div class="SUPPLIER-INFO">
-            <p class="SUPPLIER"><b>Supplier</b></p>
+            <h2 class="SUPPLIER">Supplier</h2>
                 <div class="details">
                     <div class="LEFT">
-                        <label for="NAME">Name:</label>
-                        <input type="text" id="NAME">
-                        <label for="TELEPHONE-NUMBER">Telephone no.:</label>
-                        <input type="text" id="TELEPHONE-NUMBER">
-                        <label for="ADDRESS">Address:</label>
-                        <input type="text" id="ADDRESS">
+                        <p>Name: John Ramos</p>
+                        <p>Telephone no.: (123) 0111999</p>
+                        <p>Address: ABC Medical Supplies 123 Health St., MedCity, MedState</p>
                     </div>
                     <div class="RIGHT">
-                        <label for="SUPPLIER-NUMBER">Supplier No.:</label>
-                        <input type="text" id="SUPPLIER-NUMBER">
-                        <label for="FAX-NUMBER">Fax Number:</label>
-                        <input type="text" id="FAX-NUMBER">
+                        <p>Supplier No.: SUP001</p>
+                        <p>Fax Number: (123) 09-080001</p>
                     </div>
                 </div>
         </div>
     </div>
+
+    <div class="box">
+        <a href="SUPPLIES-LIST.html" class="supplies-list">
+            <button class="supplies-list">SUPPLIES LIST<i class="fas fa-arrow-right"></i></button>
+        </a>
+    </div>
+
 </body>
 </html>

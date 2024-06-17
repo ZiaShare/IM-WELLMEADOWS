@@ -197,11 +197,13 @@ body {
     text-align: center;
     margin-bottom: 15px;
 }
+
 .section .personal label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
+
 .section .personal input {
     width: 100%;
     padding: 8px;

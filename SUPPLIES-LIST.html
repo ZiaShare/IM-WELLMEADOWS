@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link href="PATIENT-APPOINTMENT.css" rel="stylesheet" />
+    <link href="SUPPLIES-LIST.css" rel="stylesheet" />
     <script src="DATE_TIME.js"></script>
     <script src="LOGOUT.js"></script>
 </head>
@@ -72,20 +72,48 @@
         <button id="cancelLogout">Cancel</button>
     </div>
 
-    <div class="box">
-        <div class="patient-appointment"><b>PATIENT APPOINTMENT</b></div>
-            <a href="APPOINTMENT-FORM.html" class="new-appointment">
-                <button class="new-appointment">+ Add New Appointment</button>
+    <div class="PHARMACEUTICAL-LIST">
+        <div class="pharmaceutical"><b>PHARMACEUTICAL SUPPLIES LIST</b></div>
+            <a href="NEW-PHARMACEUTICAL-SUPPLY.html" class="new-pharmaceutical">
+                <button class="new-pharmaceutical">+ Add New Supply</button>
             </a>
     </div>
 
-    <table id="data-table">
+    <table id="data-pharmaceutical">
         <thead>
             <tr>
-                <th>LAST NAME</th>
-                <th>FIRST NAME</th>
-                <th>DATE</th>
-                <th>STATUS</th>
+                <th>Pharmaceutal ID</th>
+                <th>Drug Number</th>
+                <th>Drug Name</th>
+                <th>Drug Description</th>
+                <th>Dosage</th>
+                <th>Method of Administration</th>
+                <th>Quantity in Stock</th>
+                <th>Reorder Level</th>
+                <th>Cost per Unit</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div class="SURGICAL-LIST">
+        <div class="surgical"><b>SURGICAL AND NON-SURGICAL SUPPLIES LIST</b></div>
+            <a href="NEW-SURGICAL-SUPPLY.html" class="new-surgical">
+                <button class="new-surgical">+ Add New Supply</button>
+            </a>
+    </div>
+
+    <table id="data-surgical">
+        <thead>
+            <tr>
+                <th>Supply ID</th>
+                <th>Item Number</th>
+                <th>Item Name</th>
+                <th>Item Description</th>
+                <th>Quantity in Stock</th>
+                <th>Reorder Level</th>
+                <th>Cost per Unit</th>
             </tr>
         </thead>
         <tbody>

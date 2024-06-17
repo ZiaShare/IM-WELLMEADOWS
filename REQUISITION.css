@@ -154,19 +154,27 @@ body {
     background-color: #85df85; 
 }
 
-.WARD-SEARCH {
-    display: flex;
-}
-
-.WARD {
+.REQUISITION {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 180px;
     margin-left: 200px;
     background-color: bisque;
-    width: 5%;
+    width: 15%;
     padding: 10px 15px;
     border-radius: 15px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.REQUISITION-SEARCH {
+    display: flex;
+    align-items: center;
 }
 
 .search-container {
@@ -177,8 +185,7 @@ body {
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 400px;
-    margin-top: 180px;
-    margin-left: 780px;
+    margin-right: 280px;
 }
 
 #search-input {
@@ -208,21 +215,21 @@ body {
     margin-top: 20px;
 }
 
-table {
-    width: 70%;
-    border-collapse: collapse;
-    margin-top: 50px;
-    margin-left: 200px;
+.new-requisition {
+    text-decoration: none; 
 }
 
-th, td {
-    padding: 15px 9px;
-    text-align: center;
-    color: white;
-    align-self: center;
-    font-family: Arial, Helvetica, sans-serif;
+.new-requisition button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: bisque;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 380px;
 }
 
-th {
-    background-color: rgb(63, 139, 66);
+.new-requisition button:hover {
+    background-color: rgb(213, 164, 105); 
 }

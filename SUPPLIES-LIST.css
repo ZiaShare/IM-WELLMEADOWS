@@ -154,65 +154,117 @@ body {
     background-color: #85df85; 
 }
 
-.WARD-SEARCH {
-    display: flex;
-}
-
-.WARD {
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 180px;
-    margin-left: 200px;
-    background-color: bisque;
-    width: 5%;
-    padding: 10px 15px;
-    border-radius: 15px;
-}
-
-.search-container {
+.PHARMACEUTICAL-LIST {
     display: flex;
     align-items: center;
-    background-color: #fff;
-    border-radius: 25px;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin-top: 180px;
-    margin-left: 780px;
+    margin-left: 150px;
+    margin-top: 150px;
 }
 
-#search-input {
-    border: none;
-    outline: none;
-    width: 100%;
-    font-size: 16px;
-    padding: 5px;
+.pharmaceutical {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: bisque;
+    width: auto; 
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-left: 5px;
+    align-items: left;
 }
 
-#search-button {
-    background: none;
-    border: none;
-    outline: none;
+.new-pharmaceutical {
+    display: flex;
+    align-items: center;
+}
+
+.new-pharmaceutical {
+    text-decoration: none; 
+}
+
+.new-pharmaceutical button {
+    padding: 10px 15px;
+    margin-left: 520px;
+    font-size: 25px;
+    background-color: bisque;
+    border-radius: 15px;
+    border: 1px solid black;
+    text-align: center;
     cursor: pointer;
-    padding: 0;
-    margin-left: 10px;
+    text-decoration: none;
 }
 
-#search-button svg {
-    width: 20px;
-    height: 20px;
-    fill: #333;
-}
-
-#search-results {
-    margin-top: 20px;
+.new-pharmaceutical button:hover {
+    background-color: rgb(213, 164, 105); 
 }
 
 table {
-    width: 70%;
+    width: 80%;
     border-collapse: collapse;
-    margin-top: 50px;
-    margin-left: 200px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+th, td {
+    padding: 15px 9px;
+    text-align: center;
+    color: white;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+    background-color: rgb(63, 139, 66);
+}
+
+.SURGICAL-LIST {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.surgical {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: bisque;
+    width: auto; 
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-top: 150px;
+    align-items: left;
+}
+
+.new-surgical {
+    display: flex;
+    align-items: center;
+}
+
+.new-surgical {
+    text-decoration: none; 
+}
+
+.new-surgical button {
+    margin-top: 150px;
+    padding: 10px 15px;
+    margin-left: 360px;
+    font-size: 25px;
+    background-color: bisque;
+    border-radius: 15px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.new-surgical button:hover {
+    background-color: rgb(213, 164, 105); 
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 150px;
 }
 
 th, td {

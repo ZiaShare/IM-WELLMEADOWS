@@ -159,37 +159,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    margin-left: 250px;
-    width: 60%;
-    padding: 20px;
 }
 
 .SUPPLIER {
-    font-size: 25px;
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    margin-bottom: 0px;
 }
 
 .SUPPLIER-CONTAINER .SUPPLIER-INFO {
-    background-color: #F5F5DC;
+    width: 50%;
+    height: 60%;
+    background-color: white;
     border-radius: 15px;
+    margin: 220px 20px 80px 100px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-
-.SUPPLIER-CONTAINER .SUPPLIER-INFO label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.SUPPLIER-CONTAINER .SUPPLIER-INFO input {
-    width: 95%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .SUPPLIER-CONTAINER .details {
@@ -199,5 +185,39 @@ body {
 
 .SUPPLIER-CONTAINER .details .LEFT, .SUPPLIER-CONTAINER .details .RIGHT {
     flex: 1;
-    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.supplies-list {
+    display: flex;
+    align-items: center;
+}
+
+.supplies-list {
+    text-decoration: none; 
+}
+
+.supplies-list button {
+    padding: 10px 15px;
+    margin-left: 650px;
+    font-size: 25px;
+    background-color: bisque; 
+    border-radius: 30px; 
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    align-items: center;
+}
+
+.supplies-list button:hover {
+    background-color: #D5A469; 
+}
+
+.supplies-list i {
+    margin-left: 10px; 
 }
